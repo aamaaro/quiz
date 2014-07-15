@@ -1,18 +1,21 @@
 Practica
 
 - Que permisologia tiene los siguientes archivos
-rwxrwx---
---------- 
-rw-rw---- 
-r-xr-xr-x
----rw-r-x 
---x--x--x 
+rwxrwx--- 770
+--------- 000
+rw-rw---- 660
+r-xr-xr-x 555
+---rw-r-x 065
+--x--x--x 111
 
 
 - Ejecuten la búsqueda con grep buscando cunaguaro y guarde la salida en un archivo llamado
 firefox.txt
 
 -Cuanto pesa tu /home/ y cuanto pesa /etc
+
+R.- df /home
+    df /etc
 
 
 - Se requiere guardar un archivo dentro de la configuración de la memoria del computador dentro
@@ -22,24 +25,33 @@ de un archivo llamado memoria.txt
 
 - Como matamos un proceso del computador
 
+R.- usando el comando kill y el número de proceso.
+
 - Que hace el respectivo comando $cat toto > toto2
 
-- Cree una carpeta con tu nombre 
+R.- Escribe todo el contenido del archivo toto en el archivo toto2.
 
-- Dentro de la carpeta, creamos tres archivos de nombre c1 c2 c3 
+- Cree una carpeta con tu nombre
+
+R.- mkdir alberto 
+
+- Dentro de la carpeta, creamos tres archivos de nombre c1 c2 c3
+R.- touch alberto/c1.txt alberto/c2.txt alberto/c3.txt 
 
 - Guardamos en el c1 su nombre completo
+R.- cd alberto
+    nano c1.txt
 
 - Guardamos el c3 el correo electrónico
-
+R.- nano c3.txt
 - Describa a continuación la función de los siguientes directorios
 
-/bin     
-/home/
-/media
-/var  
-/	
-/sbin
-/boot
+/bin  Es donde se almacena los archivos de configuración de sistema, ejecutables e información de paquetes.   
+/home/ Es el fichero principal donde se almacena los datos de usuarios y cuentas de usuarios, configuración general de usuarios.
+/media Es donde se crean y almacenan los datos de todos los dspositivos de almacenamiento, disco duros, floppy, CDROM, entre otros. 
+/var  Es la configuracion y donde se almacena datos de paquetes y aplicaciones instaladas por el usuario, entre ellos la carpeta www.
+/	Es el directorio raiz.
+/sbin Donde se instala los paquetes por defecto del sistema operativo.
+/boot Es donde se almacena el sector de inicio.
 
 
